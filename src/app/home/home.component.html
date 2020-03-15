@@ -1,0 +1,25 @@
+<div class="container">
+	<table class="table" style="margin-top: 40px">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">des</th>
+      <th scope="col">genero</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let peliula of Peliculas">
+      <th >{{peliula.id}}</th>
+      <th >{{peliula.name }}</th>
+      <td>{{peliula.gener }}</td>
+      <td>{{peliula.des }}</td>
+      <td><a class="btn btn-primary" routerLink="/form/{{peliula.id}}">Edit</a></td>
+      <td><a class="btn btn-danger" (click)="deleteP(peliula.id)" >Delete</a></td>
+    </tr>
+  </tbody>
+</table>
+	
+</div>

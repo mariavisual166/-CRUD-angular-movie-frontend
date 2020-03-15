@@ -1,0 +1,16 @@
+<h2>Create pelicula</h2>
+<div style="margin-top: 30px">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input [(ngModel)]="pelicula.name"  type="text" class="form-control" id="name" aria-describedby="name">
+  </div>
+  <div class="form-group">
+    <label for="descriton">Descriton</label>
+    <input [(ngModel)]="pelicula.des" type="text" class="form-control" id="descriton" aria-describedby="descriton">
+  </div>
+  <div class="form-group">
+    <label for="genero">Genero</label>
+    <input [(ngModel)]="pelicula.gener" type="text" class="form-control" id="genero" aria-describedby="emailHelp">
+  </div>
+  <button (click)="savePelicula()" class="btn btn-primary">Create</button>
+</div>
